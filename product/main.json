@@ -1,0 +1,129 @@
+[
+    {
+        "id":1,
+        "pname":"Diamond",
+        "bname":"American Express",
+        "price":"$20,000",
+        "image": "img/diamond1.jpg",
+        "desc":"Special access to events or experiences."
+},
+{
+    "id":2,
+    "pname":"Tumbled Stone",
+    "bname":"Weight Loss Tumble Stone Kit",
+    "price":"$475.00",
+    "image":"img/stone1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":3,
+    "pname":"Crystal Cluster",
+    "bname":"Vogue Vita",
+    "price":"$20-$50",
+    "image":"img/clus1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":4,
+    "pname":"Crystal Points",
+    "bname":"Random Small Himalayan Quartz Point",
+    "price":"$20.00",
+    "image":"img/point1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":5,
+    "pname":"Crystals Wands",
+    "bname":"Rainbow Fluorite Crystal Wand",
+    "price":"$1.99",
+    "image":"img/wand1.jpg"
+},
+{
+    "id":6,
+    "pname":"Quartz",
+    "bname":"Angel Aura Quartz",
+    "price":"$34.49",
+    "image": "img/quartz1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":7,
+    "pname":"Amber",
+    "bname":"Amber Chip Bracelet",
+    "price":"$9.99",
+    "image": "img/amber1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":8,
+    "pname":"Crystal Healing",
+    "bname":"Aquamarine Healing Crystal",
+    "price":"$52.99",
+    "image": "img/healing1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":9,
+    "pname":"Candle Holder",
+    "bname":"Evil Hamsa candle",
+    "price":"$995.00",
+    "image": "img/candle1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":10,
+    "pname":"Runvagish",
+    "bname":"American Express",
+    "price":"$20,000",
+    "image": "img/runvagish1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":11,
+    "pname":"Pyramid",
+    "bname":"Pyramid for Reiki Healing",
+    "price":"$249.00",
+    "image": "img/pyramid1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":12,
+    "pname":"Necklace",
+    "bname":"Designer Necklace for Women",
+    "price":"$699.00",
+    "image": "img/necklace1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":13,
+    "pname":"Ring",
+    "bname":"crystal Diamond Ring",
+    "price":"$295.00",
+    "image": "img/ring1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":14,
+    "pname":"Bracelet",
+    "bname":"Amethyst Stone Beads ",
+    "price":"$295.00",
+    "image": "img/bracelet1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":15,
+    "pname":"Earring",
+    "bname":"Natural Crystal Stone Round Earrings ",
+    "price":"$650.00",
+    "image": "img/earring1.jpg",
+    "desc":"Special access to events or experiences."
+},
+{
+    "id":16,
+    "pname":"Grid",
+    "bname":"Clear Quartz Brazilian quality Grid",
+    "price":"$3,999.00",
+    "image": "img/grid1.jpg",
+    "desc":"Special access to events or experiences."
+}
+]

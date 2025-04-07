@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+    fetch("main.json")
+.then(response => response.json())
+.then(json => {
+  console.log(json);
+  const mainData = document.getElementById("main-data");
+  json.forEach(item => {
+    console.log(item);
+       mainData.innerHTML += `<div class="box-area">
+        <div class="box">
+        <img src="${item.image}" class="first-image" height="300" width="300" alt="Diamond Image">
+        <div class="overlay">
+          <h2 class="card-title">${item.pname}</h2>
+          <h2 class="card-price">${item.price}</h2>
+          <p class="card-description">${item.desc}</p>
+          <div class="card-actions">
+            <button class="detail-btn">View Details</button>
+          </div>
+          </div>
+           </div>
+      </div>`;
+  });
+})
+.catch(error => console.error("Error fetching JSON:", error));
+    </script>
+    <nav>
+      <div class="logo">Diamond
+      </div>    
+  <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="product.html">Product</a>
+          <ul>
+              <li><a href="#">Crystals<span><i class="fa-solid fa-plus"></i></span></a>
+              <ul>
+                  <li><a href="#">Tumbled Stone</a></li>
+                  <li><a href="#">Crystal Clusters</a></li>
+                  <li><a href="#">Crystal Points</a></li>
+                  <li><a href="#">Crystal Wands</a></li>
+              </ul>
+          </li>
+              <li><a href="#">Jewelry <span><i class="fa-solid fa-plus"></i></span></a>
+              <ul>
+                  <li><a href="#">Crystal Necklace</a></li>
+                  <li><a href="#">Crystal Earning</a></li>
+                  <li><a href="#">Crystal Bracelet</a></li>
+                  <li><a href="#">Crystal Ring</a></li>
+              </ul>
+          </li>
+              <li><a href="#">Decor</a>
+</li>
+              <li><a href="#">Medition</a></li>
+              <li><a href="#">Healing</a></li>
+          </ul>
+      </li>
+      <li><a href="#">New Arrival</a></li>
+      <li><a href="#">Special Offers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>   
+      </ul>     
+  </nav>
+  <div class="top-bar">
+    <div class="icons">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <input class="inp" type="search" placeholder="search"> <i class="fa-solid fa-magnifying-glass"></i> 
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+    </div>
+<!--------product-section----------------->
+    <h1 class="heading">Product</h1>
+    <div class="card-area">
+      <div id="main-data" style="display: flex; flex-wrap: wrap;">
+      </div>  
+    </div>
+    <footer class="footer-area">
+      <div class="footer-wave-box"></div>
+      <div class="footer-wave footer-animation">
+      </div>
+      <div class="main">
+      <div class="footer">
+      <div class="single-footer">
+      <h4>About Us</h4>
+      <p></p>
+      <div class="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      </div>
+      <div class="single-footer">
+      <h4>Main-Menu</h4>
+      <ul>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>About Us</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Product</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>Contact Us</a></li>
+      </ul>
+      </div>
+      <div class="single-footer">
+      <h4>Quick Links</h4>
+      <ul>
+          <li><a href="#"><i class="fa-solid fa-chevron-left"></i>Privacy Policy</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-left"></i>Terms $ Condition</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-left"></i>Disclaimer</a></li>
+      </ul>
+      </div>
+      <div class="single-footer">
+      <h4>Contact Us</h4>
+      <ul>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i>Mansehra Colony Landhi</a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i>+92 33413128</a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i>fizzapari26@gmail.com</a></li>
+          <li><a href="#"><i class="fa-solid fa-globe"></i>www.demo.com</a></li>
+      </ul>
+      </div>
+      </div>
+      <div class="copy">
+          <p>$copy; 2025 all right reserved</p>
+      </div>
+      </div>
+  </div>
+  
+      </footer>
+    <script src="./app.js"></script>
+</body>
+</html>

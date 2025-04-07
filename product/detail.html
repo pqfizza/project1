@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <script>
+     var baseUrl=(window.location).href;
+    var koopId= baseUrl.substring(baseUrl.lastIndexOf("=")+1);
+    fetch("main.json")
+    .then(response => response.json())
+    .then(json=>{
+      for(var item in json){
+        if(json[item].id==koopId){
+        document.getElementById("main-data").innerHTML+=`<div class="box-area">
+        <div class="box">
+        <img src="${item.image}" class="first-image" height="300" width="300" alt="Diamond Image">
+        <div class="overlay">
+          <h2 class="card-title">${item.pname}</h2>
+          <h2 class="card-price">${item.price}</h2>
+          <p class="card-description">${item.desc}</p>
+          <div class="card-actions">
+      <button class="detail-btn">View Detail</button>
+      <a href="detail.html?id=${json[item].id}" class="btn btn-success">View More</a> 
+      
+    </div>
+    </div>
+    </div>
+  </div>`;
+ }
+      }})
+    </script>
+    <h1 class="heading">Product</h1>
+    <div class="card-area">
+      <div id="main-data" style="display: flex; flex-wrap: wrap;">
+      </div>  
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
